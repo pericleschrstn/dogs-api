@@ -64,5 +64,6 @@ function register_api_photos_get() {
     'callback' => 'api_photos_get',
   ]);
 }
+add_action('rest_api_init', 'register_api_photo_get');
 
 ?>
