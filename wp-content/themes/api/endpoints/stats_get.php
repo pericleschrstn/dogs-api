@@ -21,8 +21,8 @@ function api_stats_get($request) {
   if ($posts) {
     foreach ($posts as $post) {
       $stats[] = [
-      'id' => $posts->ID,
-      'title' => $posts->post_title,
+      'id' => $post->ID,
+      'title' => $post->post_title,
       'acessos' => get_post_meta($post->ID, 'acessos', true),
       ];      
     }
